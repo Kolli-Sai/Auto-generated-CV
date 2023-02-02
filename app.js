@@ -4,6 +4,8 @@ form.addEventListener("submit", handleSubmit);
 // import all the fields from the form.
 // eg.
 // const name = document.getElementById("name");
+let name = document.getElementById("Name");
+document.innerHTML = " Name : " + name.value;
 
 function handleSubmit(e) {
   e.preventDefault();

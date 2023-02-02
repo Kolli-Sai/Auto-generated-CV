@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="d"> -->
 
     <title>Resume</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
@@ -16,7 +17,7 @@
         <form>
           <!-- Name , Email , Phone , Github , Linkedin -->
           <!-- name  -->
-          <label for="Name">Name :</label>
+          <label for="Name">Name : </label>
           <input type="text" id="Name" name="Name" placeholder="Name" /><br />
 
           <!-- Email  -->
@@ -92,12 +93,8 @@
             <legend>Skills</legend>
             <!-- skills -->
             <label for="skills">skills : </label>
-            <input
-              type="textarea"
-              id="skills"
-              name="skills"
-              placeholder="skills eg. HTML , CSS"
-            /><br />
+            <textarea name="skills" id="skills" cols="30" rows="10"></textarea>
+            <br />
           </fieldset>
           <fieldset>
             <legend>Projects</legend>
@@ -113,12 +110,13 @@
 
             <!-- Description -->
             <label for="Description">Description : </label>
-            <input
-              type="text"
-              id="Description"
+            <textarea
               name="Description"
-              placeholder="write in HTML format"
-            /><br />
+              id="Description"
+              cols="30"
+              rows="10"
+            ></textarea
+            ><br />
 
             <!-- Link  -->
             <label for="Link">Link : </label>
@@ -161,16 +159,17 @@
 
             <!-- Description -->
             <label for="Description">Description : </label
-            ><input
-              type="text"
-              id="Description"
+            ><textarea
               name="Description"
-              placeholder="Description"
-            /><br />
+              id="Description"
+              cols="30"
+              rows="10"
+            ></textarea
+            ><br />
           </fieldset>
           <button type="submit" class="btn">submit</button>
           <button type="reset" class="btn">reset</button>
-          <button class="btn" onclick="handleLeft()"><<</button>
+          <button class="btn" onclick="handleLeft()">view & Print</button>
         </form>
       </div>
       <div class="right">

@@ -61,6 +61,7 @@ main > .left fieldset {
 
 .left input {
   margin-bottom: 20px;
+  margin-right: 10px;
   padding: 10px;
   border-radius: 10px;
 }
@@ -92,4 +93,51 @@ main > .right > .block1 {
 }
 .print {
   display: none;
+}
+
+[id="College"] {
+  margin-left: 45px;
+}
+[id="CGPA"] {
+  margin-left: 50px;
+}
+[id="Degree"] {
+  margin-left: 42px;
+}
+[id="Name"] {
+  margin-left: 42px;
+}
+
+[id="Linkedin"] {
+  margin-left: 36px;
+}
+[id="Phone"] {
+  margin-left: 42px;
+}
+[id="Github"] {
+  margin-left: 42px;
+}
+[id="Email"] {
+  margin-left: 45px;
+}
+[id="skills"] {
+  margin-left: 50px;
+}
+[id="Project"] {
+  margin-left: 40px;
+}
+[id="Description"] {
+  margin-left: 15px;
+}
+[id="Link"] {
+  margin-left: 60px;
+}
+[id="Company"] {
+  margin-left: 32px;
+}
+[id="Designation"] {
+  margin-left: 20px;
+}
+[id="Duration"] {
+  margin-left: 39px;
 }
