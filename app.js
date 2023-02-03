@@ -4,8 +4,6 @@ form.addEventListener("submit", handleSubmit);
 // import all the fields from the form.
 // eg.
 // const name = document.getElementById("name");
-let name = document.getElementById("Name");
-document.innerHTML = " Name : " + name.value;
 
 function handleSubmit(e) {
   e.preventDefault();
@@ -14,6 +12,14 @@ function handleSubmit(e) {
   //   const name_resume = document.getElementById("name_resume");
   //   name_resume.innerHTML = name.value;
   //   similarly for all the other fields
+  // name
+  const Name = document.getElementById("Name");
+  const name_resume = document.getElementById("name_resume");
+  name_resume.innerHTML = Name.value;
+  // email
+  const Email = document.getElementById("Email");
+  const email_resume = document.getElementById("email_resume");
+  email_resume.innerHTML = Email.value;
 }
 
 function handleLeft() {
