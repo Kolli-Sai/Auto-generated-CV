@@ -159,3 +159,8 @@ label {
 textarea {
   padding: 20px;
 }
+
+.bottom {
+  display: flex;
+  justify-content: center;
+}
