@@ -14,21 +14,23 @@
 }
 
 .left {
-  /* border: 1px solid black; */
-  /* height: 100vh;
-  overflow: scroll; */
-  padding: 10px;
+  /* padding: 10px; */
   /* margin: 10px; */
   background-color: lightyellow;
-  /* position: fixed;
-  top: 10;
-  overflow-y: scroll; */
+  height: 100vh;
+  overflow: scroll;
+  position: sticky;
+  top: 0;
 }
 .right {
-  border: 1px solid black;
-  padding: 30px;
-  margin: 10px;
-  /* overflow-y: scroll; */
+  height: 100vh;
+  /* border: 1px solid black; */
+  padding: 20px;
+  /* margin: 10px; */
+  background-color: whitesmoke;
+  overflow: scroll;
+  position: sticky;
+  top: 0;
 }
 .item {
   /* border: 1px solid black; */
@@ -88,4 +90,72 @@ button:hover {
 label {
   font-size: 20px;
   font-weight: 600;
+}
+
+.heading {
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(37, 38, 94);
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgba(37, 38, 94, 0.6);
+  margin-top: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-block-color: black;
+  margin-bottom: 20px;
+}
+.sub-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(37, 38, 94);
+  margin-bottom: 10px;
+}
+
+.normal-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(37, 38, 94, 0.8);
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgba(37, 38, 94, 0.6);
+  margin-top: 20px;
+  /* border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-block-color: black; */
+  margin-bottom: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  color: skyblue;
+  margin-bottom: 10px;
+}
+
+.right .top {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+textarea {
+  padding: 20px;
 }
