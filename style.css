@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -18,6 +19,7 @@ body {
   align-items: center;
   background: whitesmoke;
 }
+
 main {
   height: 100vh;
   width: 100vw;
@@ -26,16 +28,16 @@ main {
   align-items: center;
 }
 main > .left {
-  background: rgb(255, 255, 76);
-  padding: 1rem;
-  width: 30%;
+  background-color: rgb(230, 220, 84);
+  width: 40%;
   height: 100%;
   overflow-y: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-bottom: 60px;
+  /* border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem; */
 }
 main > .left legend {
   color: black;
@@ -50,29 +52,82 @@ main > .left fieldset {
 .btn {
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
-  border: none;
+  border: 1px solid black;
   outline: none;
   border-radius: 0.5rem;
-  background: black;
-  color: yellow;
+  background: white;
+  color: rgb(8, 8, 8);
   font-weight: 600;
   cursor: pointer;
 }
 
-.left input {
-  margin-bottom: 20px;
-  margin-right: 10px;
-  padding: 10px;
-  border-radius: 10px;
+.btn:hover {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 0.5rem;
+  background: rgb(8, 8, 8);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
 }
-.left fieldset {
-  margin-bottom: 30px;
-  margin-top: 20px;
+
+/* #textbox1, #textbox2 {
+    display: block;
+    float: left;    
+    width: 100px;    
+    height: 100px;    
+} */
+
+input[type="text"],
+select,
+textarea {
+  width: 60%;
+  padding: 12px;
+  border: 2px solid black;
+  /* border-radius: 20px; */
+  resize: vertical;
+  justify-content: center;
+  display: block;
+  float: right;
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 60%;
+  padding: 12px;
+  border: 2px solid black;
+  /* border-radius: 20px; */
+  resize: vertical;
+  justify-content: center;
+  float: right;
+  display: block;
+}
+
+input[type="tel"],
+select,
+textarea {
+  width: 60%;
+  padding: 12px;
+  border: 2px solid black;
+  /* border-radius: 20px; */
+  resize: vertical;
+  justify-content: center;
+  float: right;
+  display: block;
+}
+
+label {
+  padding: 30px 30px 30px 0;
+  display: inline-block;
+  justify-content: center;
 }
 
 /* resume */
 main > .right {
-  background: whitesmoke;
+  background: rgb(246, 244, 244);
   overflow-y: auto;
   padding: 1rem;
   width: 70%;
@@ -85,59 +140,40 @@ main > .right {
 }
 main > .right > .block1 {
   display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  width: 60vw;
+  text-align: center;
+  color: rgb(46, 48, 48);
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  size: 30px;
+}
+
+main > .right > .block2 {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: gray;
+  color: rgb(78, 162, 186);
   width: 60vw;
+  text-align: justify;
+  flex-direction: row;
+  justify-content: space-around;
 }
+main > .right > .block3 {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  color: rgb(20, 19, 19);
+  width: 60vw;
+  text-align: left;
+  size: 15px;
+}
+
 .print {
   display: none;
-}
-
-[id="College"] {
-  margin-left: 45px;
-}
-[id="CGPA"] {
-  margin-left: 50px;
-}
-[id="Degree"] {
-  margin-left: 42px;
-}
-[id="Name"] {
-  margin-left: 42px;
-}
-
-[id="Linkedin"] {
-  margin-left: 36px;
-}
-[id="Phone"] {
-  margin-left: 42px;
-}
-[id="Github"] {
-  margin-left: 42px;
-}
-[id="Email"] {
-  margin-left: 45px;
-}
-[id="skills"] {
-  margin-left: 50px;
-}
-[id="Project"] {
-  margin-left: 40px;
-}
-[id="Description"] {
-  margin-left: 15px;
-}
-[id="Link"] {
-  margin-left: 60px;
-}
-[id="Company"] {
-  margin-left: 32px;
-}
-[id="Designation"] {
-  margin-left: 20px;
-}
-[id="Duration"] {
-  margin-left: 39px;
 }
